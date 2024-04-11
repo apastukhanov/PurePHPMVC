@@ -20,8 +20,4 @@
     $dispatcher = new Dispatcher($requestMethod, $requestUri);
     $dispatcher->dispatch();
 
-?> 
-
-
-</body>
-</html>
+?>
