@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Views;
 
 
@@ -8,7 +7,6 @@ class Component {
 
     private $name = null;
     private $data = [];
-
 
     private function __construct($name, $data) {
         $this->name= $name;
@@ -31,6 +29,5 @@ class Component {
     public function render() {
         echo $this->load();
     }
-
 
 }
