@@ -17,9 +17,8 @@ function get_user() {
     return $user;
 }
 
-function view(string $template, Array $data) {
+function view(string $template, Array $data = []) {
     extract($data);
-
     ob_start();
     include 'resources/pages/'. $template;
     ob_end_flush();

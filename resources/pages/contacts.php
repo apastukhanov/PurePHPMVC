@@ -1,9 +1,7 @@
 <?php 
-
     $basePath = dirname(dirname(__DIR__));
 
     $user = get_user();
-    
 
     include($basePath . '/resources/components/nav.inc.php') 
 ?>

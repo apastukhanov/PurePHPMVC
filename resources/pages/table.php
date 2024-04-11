@@ -1,5 +1,5 @@
 <?php 
-    use CustomComponent\Component;
+    use App\Views\Component;
 
     $basePath = dirname(dirname(__DIR__));
     $user = get_user();    
@@ -14,7 +14,7 @@
             }
             else {
 
-            header("Location: static/pages/login.php");   
+            header("Location: /login");   
         }
         ?>
 </div>

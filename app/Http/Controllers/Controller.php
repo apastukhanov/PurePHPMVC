@@ -1,17 +1,10 @@
 <?php
 
-
 namespace App\Controllers;
 
 use Model\Car;
 
-// include 'include/func.inc.php';
-
 class Controller {
-
-    public function __construct() {
-
-    }
 
     public function getHome() {
         $cars = Car::all();
@@ -19,7 +12,7 @@ class Controller {
     }
 
     public function getContacts() {
-        view("contacts.php", []);
+        view("contacts.php");
     }
 
     public function getCar() {
@@ -34,11 +27,10 @@ class Controller {
     }
 
     public function logout() {
-        view("logout.php", []);
+        view("logout.php");
     }
 
     public function login() {
-        $cars = Car::all();
-        view("login.php", []);
+        view("login.php");
     }
 }

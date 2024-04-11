@@ -1,7 +1,7 @@
 <?php
 
 
-namespace CustomComponent;
+namespace App\Views;
 
 
 class Component {

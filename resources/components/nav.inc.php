@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a {
+        text-decoration: none;  
+        }
+    </style>
 </head>
 <body>
 
@@ -18,7 +23,7 @@
 
 
     <div style="margin: 0px; padding: 0px; display: flex; flex-direction: column; height: 100vh" >
-        <div class="nav" style="background: greenyellow; display: flex; justify-content:space-between; align-items: center; height: 75px">
+        <div class="nav" style="background: greenyellow; display: flex; flex-grow: 0; justify-content:space-between; align-items: center; min-height: 75px">
             <div style="padding: 0px 20px; display: flex; gap: 20px">
                 <a href="/">Home</a>
                 <a href="/table">Table</a>

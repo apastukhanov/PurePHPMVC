@@ -2,21 +2,10 @@
 
     $basePath = dirname(dirname(__DIR__));
 
-    use CustomComponent\Component;
-    // use Model\Car;
+    use App\Views\Component;
 
-    // include($basePath . '/include/func.inc.php');
     $user = get_user();
     
-    // $isCarFound = false;
-    // $id = $_REQUEST['id'];
-    // $car = Car::get($id );
-
-
-    // if ($car !== null) {
-    //     $isCarFound = true;
-    // }
-
     include($basePath . '/resources/components/nav.inc.php') 
 ?>
 

@@ -1,12 +1,9 @@
 <?php 
-    use CustomComponent\Component;
-    use Model\Car;
+    use App\Views\Component;
 
     $basePath = dirname(dirname(__DIR__));    
     
-    // include($basePath . '/include/func.inc.php');
     $user = get_user();
-    // $cars = Car::all();
 
     include($basePath . '/resources/components/nav.inc.php');
 
@@ -14,14 +11,14 @@
 
 <div class="main" style="display: flex;justify-content:flex-start; flex-grow: 1; margin: 40px; " >
         <?php if((isset($_COOKIE["user-name"]) || isset($_POST["user-name"])) && !isset($_GET['error'])): ?>
-            <div style="display: grid; grid-template-columns: auto auto auto auto; gap: 30px; margin: 20px">
+            <div style="display: grid; grid-template-columns: auto auto auto; gap: 30px; margin-left: 17%">
                 <?php foreach ($cars as $car) {
                     Component::create("card", $car) -> render();
                 }
                 ?>
             </div>
         <?php else:
-            // header("Location: static/pages/login.php");   
+            header("Location: /login");   
         ?>
         <?php endif ?>
 
