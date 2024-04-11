@@ -3,12 +3,7 @@
 
 namespace App\Dispatchers;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-
 use App\WebRoutes\Route;
-// use App\Controllers\Controller;
 
 
 class Dispatcher {
@@ -38,7 +33,6 @@ class Dispatcher {
         }
     
         list($controller, $method) = $action;
-        // $controller = 'Dispatcher';
         
         $controller = new $controller();
         return $controller->$method();
